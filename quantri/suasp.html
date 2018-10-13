@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Vietpro Mobile Shop - Sửa Thông tin sản phẩm</title>
+<title>Database System</title>
 <link rel="stylesheet" type="text/css" href="css/quantri.css" />
 <link rel="stylesheet" type="text/css" href="css/suasp.css" />
 </head>
@@ -11,36 +11,47 @@
 	<div id="header">
     	<div id="navbar">
         	<ul>
-            	<li id="admin-home"><a href="#">trang chủ quản trị</a></li>
-                <li><a href="#">thành viên</a></li>
-                <li><a href="#">danh mục sản phẩm</a></li>
-                <li><a href="#">sản phẩm</a></li>
-                <li><a target="_blank" href="#">xem website</a></li>
+            	<li id="admin-home"><a href="#">Intro</a></li>
+                <li><a href="#">Linked Pages</a></li>
+                <li><a href="#">Employees</a></li>
+                <li><a href="#">Products</a></li>
+                <!--<li><a target="_blank" href="#">xem website</a></li>-->
             </ul>
             <div id="user-info">
-            	<p>Xin chào <span>admin</span> đã đăng nhập vào hệ thống</p>
-                <p><a href="#">Đăng xuất</a></p>
+            	<p>Welcome <span>admin</span> Signing in System</p>
+                <p><a href="#">Sign Out</a></p>
             </div>
         </div>
         <div id="banner">
-        	<div id="logo"><a href="#"><img src="anh/logo.png" /></a></div>
+        	<div id="logo"><a href="#"><img src="anh/logo.png" height="120px" /></a></div>
         </div>
     </div>
     <div id="body">
-        <h2>sửa thông tin sản phẩm</h2>
+        <h2>Employees Information Altering</h2>
 		<div id="main">
         	<form method="post" enctype="multipart/form-data">
         	<table id="add-prd" border="0" cellpadding="0" cellspacing="0">
             	<tr>
-                	<td><label>Tên sản phẩm</label><br /><input type="text" name="ten_sp" value="iPhone 5s Gold Chính hãng" /></td>
+                	<td><label>Employee Name</label><br /><input type="text" name="ten_sp" value="Black Smith" /></td>
                 </tr>
+
+
+                <!-- Not require at this time
                 <tr>
-                	<td><label>Ảnh mô tả</label><br /><input type="file" name="anh_sp" /></td>
+                	<td><label>Job Title</label><br /><input type="file" name="anh_sp" /></td>
                 </tr>
+                -->
+
+
                 <tr>
-                	<td><label>Nhà cung cấp</label><br />
+                	<td><label>Job Title</label><br />
                     	<select name="id_dm">
-                            <option value=1>iPhone</option>
+                            <option value=1>Technical</option>
+                            <option value=1>Operator SMT</option>
+                            <option value=1>Operator ASM</option>
+                            <option value=1>Quality Engineer</option>
+                            <option value=1>Process Engineer</option>
+                            <option value=1>Manager</option>
                         </select>	
                     </td>
                 </tr>
@@ -77,10 +88,9 @@
     </div>
     <div id="footer">
     	<div id="footer-info">
-        	<h4>trung tâm công nghệ web vietpro</h4>
-            <p><span>Địa chỉ:</span> Tầng 5, Tòa nhà A4, Ngõ 120 Hoàng Quốc Việt - Cầu Giấy - Hà Nội | <span>Phone</span> (04) 3537 6697</p>
-            <p><span>Trụ sở 2:</span> Số 25/178/71 Tây Sơn - Đống Đa - Hà Nội | <span>Hotline</span> 0968 511 155</p>
-            <p>Bản quyền thuộc Vietpro Education</p>
+            <h4></h4>
+            <p><span></span> Floor 2, Center Block, 124 Hoàng Quốc Việt - Cầu Giấy - Hà Nội | <span>Phone:</span> 0914703890</p>
+            <!--<p>Bản quyền thuộc ...</p>-->
         </div>
     </div>
 </div>
