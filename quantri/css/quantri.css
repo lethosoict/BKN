@@ -79,12 +79,13 @@ body{
 	}	
 	
 #user-info{
-	position:absolute;
-	width:213px;
-	height:117px;
-	background:url(../anh/user-info.png) top left no-repeat;
-	top:0px;
-	left:767px;
+	position: absolute;
+	width: 213px;
+	height: 117px;
+	background: url(../anh/user-info.png) top left no-repeat;	
+	top: 0px;
+	left: 950px;
+	
 	}	
 	
 #user-info p{
@@ -111,7 +112,7 @@ body{
 	
 /*---------------- Banner -------------------*/	
 #banner{
-	width:960px;
+	width:1160px;
 	height:auto;
 	padding:20px;
 	border-bottom:1px solid #CCC;
