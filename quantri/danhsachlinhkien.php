@@ -1,9 +1,9 @@
 
 <link rel="stylesheet" type="text/css" href="css/danhsachnv.css" />
 
-        <h2>Quản lý người dùng</h2>
+        <h2>Danh sách linh kiện</h2>
 		<div id="main">
-        	<p id="add-prd"><a href="#"><span>Tạo người dùng mới</span></a></p>
+        	<p id="add-prd"><a href="#"><span>Thêm mới linh kiện</span></a></p>
         	<table id="prds" border="0" cellpadding="0" cellspacing="0" width="100%">
             	<tr id="prd-bar">
                 	<td width="5%">TT</td>

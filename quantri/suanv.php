@@ -97,7 +97,7 @@
                 	<td><label>Phân quyền</label><br />
                     	<select name="id_pq">
                             <!--<option value="unselect">unselect</option>-->                           
-                            <option value="Admin">Admin</option>
+                   <?php if($mpq>3) echo'<option value="Admin">Admin</option>' ?>         
                             <option value="Supervisor">Supervisor</option>
                             <option value="Normal User">Normal User</option>
                         </select>	

@@ -29,6 +29,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Database System</title>
+<link rel="icon" type="image/png" href="anh/barlogo.png" />
 <link rel="stylesheet" type="text/css" href="css/quantri.css" />
 </head>
 <body>
@@ -36,8 +37,9 @@
 	<div id="header">
     	<div id="navbar">
         	<ul>
-            	<li id="admin-home"><a href="quantri.php">Giới thiệu</a></li>
-                <li><a href="?page_layout=danhsachnv">Người dùng</a></li>
+            	<li id="admin-home"><a href="quantri.php">Giới thiệu</a></li> 
+    <?php if($mpq >2) echo "<li><a href='?page_layout=danhsachnv'>Người dùng</a></li>"; ?>
+    			<li><a href="?page_layout=danhsachnsl">Người sửa lỗi</a></li>
                 <li><a href="?page_layout=danhsachnhomsp">Nhóm Sàn phẩm</a></li>
                 <li><a href="#">Sản phẩm Nhận</a></li>
                 <li><a href="#">Sản phẩm Sửa</a></li>

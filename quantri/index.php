@@ -14,6 +14,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Database</title>
+<link rel="icon" type="image/png" href="anh/barlogo.png" />
 <link rel="stylesheet" type="text/css" href="css/dangnhap.css" />
 </head>
 <body>
