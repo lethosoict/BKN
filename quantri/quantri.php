@@ -41,9 +41,12 @@
     <?php if($mpq >2) echo "<li><a href='?page_layout=danhsachnv'>Người dùng</a></li>"; ?>
     			<li><a href="?page_layout=danhsachnsl">Người sửa lỗi</a></li>
                 <li><a href="?page_layout=danhsachnhomsp">Nhóm Sàn phẩm</a></li>
+                <li><a href="#">Nhóm lỗi</a></li>
                 <li><a href="#">Sản phẩm Nhận</a></li>
                 <li><a href="#">Sản phẩm Sửa</a></li>
                 <li><a href="?page_layout=danhsachlinhkien">Linh kiện</a></li>
+                <li><a href="#">Vị trí</a></li>
+                <li><a href="#">Hành động sửa</a></li>
                 <!--<li><a target="_blank" href="#">Thêm mới</a></li>-->
             </ul>
             <div id="user-info">

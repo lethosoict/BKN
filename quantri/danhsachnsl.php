@@ -25,7 +25,7 @@
                     <td class="l5">C3</td>
                     <td><span class="thumb">NM1</span></td>
                     <td><span class="price"></span></td>
-                    <td><a href="#"><span>Sửa</span></a></td>
+                    <td><a href="?page_layout=suansl"><span>Sửa</span></a></td>
                     <td><a><span>Xóa</span></a></td>
                 </tr>
 

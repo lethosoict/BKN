@@ -24,5 +24,11 @@
 				}
 			}
 		
+		/*
+		function GetSubmit($submit, $error, $ma){
+					
+				}*/
+		
+		
 	 	}
 ?>

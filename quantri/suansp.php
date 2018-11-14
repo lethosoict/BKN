@@ -1,25 +1,11 @@
 <?php
-include_once 'phpclass/error.php';
-
-if(isset($_POST['submit'])){
-	$submit_ten_nsp = new GetSubmit($_POST['ten_nsp'], '');
-	$submit_ma_nsp = new GetSubmit($_POST['ma_nsp'], '');
-	$submit_mota_nsp = new GetSubmit($_POST['mota_nsp'], '');
-	
-	if(isset($submit_ten_nsp->error) &&
-	   isset($submit_ma_nsp->error) &&
-	   isset($submit_mota_nsp->error)
-	){
-		// Insert into Database
-	}
-}
-
+    
 ?>
 
 <link rel="stylesheet" type="text/css" href="css/themnv.css" />
 
-        <h2>Thêm mới nhóm sản phẩm</h2>
-		<div id="main">
+<h2>Thay đổi thông tin nhóm sản phẩm</h2>
+	<div id="main">
         	<form method="post" enctype="multipart/form-data">
                 <table id="add-prd" border="0" cellpadding="0" cellspacing="0">
                     <tr>
@@ -45,4 +31,4 @@ if(isset($_POST['submit'])){
                     </tr>
                 </table>
             </form>
-    	</div>
+    </div>

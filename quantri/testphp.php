@@ -22,6 +22,7 @@
 		
 		echo "Number of rows: ".$row;*/
 	
+/*
 	$arr = array(
 		'bar of goal' => 1,
 		'flar' => 5,
@@ -31,5 +32,8 @@
 	$kq	= $arr['flar'] + $arr['gour'] - $arr['bar of goal'];
 	
 	echo $kq;
+	*/
+
+	
 	
 ?>
