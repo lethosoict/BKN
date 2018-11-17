@@ -51,38 +51,8 @@
 	<?php
 	}
 	?>
-                <!--
-                <tr>
-                                    <td><span>02</span></td>
-                                    <td class="l5"><a href="#">Nguyễn văn B</a></td>
-                                    <td class="l5"><span class="price">25</span></td>
-                                    <td class="l5">2</td>
-                                    <td><span class="thumb">3C</span></td>
-                                    <td><a href="#"><span>Sửa</span></a></td>
-                                    <td><a href="#"><span>Xóa</span></a></td>
-                                </tr>
-                
-                                <tr>
-                                    <td><span>03</span></td>
-                                    <td class="l5"><a href="#">Trần xuân C</a></td>
-                                    <td class="l5"><span class="price">25</span></td>
-                                    <td class="l5">2</td>
-                                    <td><span class="thumb">3C</span></td>
-                                    <td><a href="#"><span>Sửa</span></a></td>
-                                    <td><a href="#"><span>Xóa</span></a></td>
-                                </tr>
-                
-                                <tr>
-                                    <td><span>04</span></td>
-                                    <td class="l5"><a href="#">Đinh Văn G</a></td>
-                                    <td class="l5"><span class="price">25</span></td>
-                                    <td class="l5">3</td>
-                                    <td><span class="thumb">3C</span></td>
-                                    <td><a href="#"><span>Sửa</span></a></td>
-                                    <td><a href="#"><span>Xóa</span></a></td>
-                                </tr>-->
-                
 
+                
             </table>
             <p id="pagination"><span>1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a></p>
     	</div>

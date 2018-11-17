@@ -41,12 +41,13 @@
     <?php if($mpq >2) echo "<li><a href='?page_layout=danhsachnv'>Người dùng</a></li>"; ?>
     			<li><a href="?page_layout=danhsachnsl">Người sửa lỗi</a></li>
                 <li><a href="?page_layout=danhsachnhomsp">Nhóm Sàn phẩm</a></li>
-                <li><a href="#">Nhóm lỗi</a></li>
+                <li><a href="?page_layout=danhsachnhomloi">Nhóm lỗi</a></li>            
+                <li><a href="?page_layout=danhsachlinhkien">Linh kiện</a></li>
+                <li><a href="?page_layout=danhsachvitri">Vị trí</a></li>
+                <li><a href="?page_layout=hanhdongsua">Hành động sửa</a></li>
                 <li><a href="#">Sản phẩm Nhận</a></li>
                 <li><a href="#">Sản phẩm Sửa</a></li>
-                <li><a href="?page_layout=danhsachlinhkien">Linh kiện</a></li>
-                <li><a href="#">Vị trí</a></li>
-                <li><a href="#">Hành động sửa</a></li>
+                <li><a href="?page_layout=danhsachloi">TestDS</a></li>
                 <!--<li><a target="_blank" href="#">Thêm mới</a></li>-->
             </ul>
             <div id="user-info">
@@ -94,7 +95,7 @@
     	<div id="footer-info">
         	<h4> </h4>
             <p><span></span> Tầng 2, Nhà 5 tầng, 124 Hoàng Quốc Việt - Cầu Giấy - Hà Nội | <span>Phone:</span> 0914703890</p>
-            <!--<p>Bản quyền thuộc ...</p>-->
+           <p>Bản quyền thuộc BCN - VNPT Technology</p>
         </div>
     </div>
 </div>

@@ -63,19 +63,23 @@
 	 }
 	 */
 	
-	// Write value into excel file	 
+	// Write value into excel file. Create newfile!! cant not override on existing file
+	/*
 	$value = "Marco Van Bastel";
-	if(isset($_POST['submit'])){
-		$phpExcel = new PHPExcel();
-	$phpExcel->setActiveSheetIndex(0);
+		if(isset($_POST['submit'])){
+			$phpExcel = new PHPExcel();
+		$phpExcel->setActiveSheetIndex(0);
+		
+		// create header
+		$phpExcel->getActiveSheet()->SetCellValue("A3", $value);
+		
+		// save file excel
+		$objWrite =  new PHPExcel_Writer_Excel2007($phpExcel);
+		$objWrite->save("the_file.xlsx");
+		}
+	 * 
+	 * */
 	
-	// create header
-	$phpExcel->getActiveSheet()->SetCellValue("A3", $value);
-	
-	// save file excel
-	$objWrite =  new PHPExcel_Writer_Excel2007($phpExcel);
-	$objWrite->save("the_file.xlsx");
-	}
 	
 	
 	

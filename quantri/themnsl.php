@@ -20,13 +20,15 @@
 			/*
 			echo "Availble all information...!!!";
 						
-						$txt = $submit_ten_nsl->submit."|| ".$submit_ma_nsl->submit."  ||  ".
-									 $submit_hoc_van->submit."  ||  ".$submit_tay_nghe->submit."  ||  ".
-									 $submit_don_vi->submit."  ||  ".$submit_ghi_chu->submit."  ||"."\n";
+			$txt = $submit_ten_nsl->submit."|| ".$submit_ma_nsl->submit."  ||  ".
+			$submit_hoc_van->submit."  ||  ".$submit_tay_nghe->submit."  ||  ".
+			$submit_don_vi->submit."  ||  ".$submit_ghi_chu->submit."  ||"."\n";
 									
-									$myFile = fopen('newFile', 'a+');
-									fwrite($myFile, $txt);
-									fclose($myFile);*/
+			$myFile = fopen('newFile', 'a+');
+			fwrite($myFile, $txt);
+			fclose($myFile);
+			* 
+			* */
 		
 		}
 	}

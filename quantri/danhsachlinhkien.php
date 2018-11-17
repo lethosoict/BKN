@@ -19,7 +19,7 @@
                     <td class="l5"><a href="#">Linh kiện 1</a></td>
                     <td class="l5"><span class="price">LK1</span></td>
                     <td><span class="thumb">Mô tả cho linh kiện 1</span></td>
-                    <td><a href="#"><span>Sửa</span></a></td>
+                    <td><a href="?page_layout=sualk"><span>Sửa</span></a></td>
                     <td><a href="#"><span>Xóa</span></a></td>
                 </tr>
 
