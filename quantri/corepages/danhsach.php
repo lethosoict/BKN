@@ -20,9 +20,6 @@
 			$this->button_name = $but_name;
 		}
 		
-		function getRowscount($rowscount){
-			$this->rowscount = $rowscount;
-		}
 		
 		function getRowName($rowna){
 			$this->rowname = $rowna;

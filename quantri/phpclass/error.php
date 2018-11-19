@@ -16,19 +16,10 @@
 		function GetSubmit($submit, $error){
 			if(CheckError($submit, $error)){
 				$this->error = IssueError();
-			//	$this->submit = null; 
 				}
 			else{
-			//	$this->error = nulll;
 				$this->submit = $submit;
 				}
-			}
-		
-		/*
-		function GetSubmit($submit, $error, $ma){
-					
-				}*/
-		
-		
+			}	
 	 	}
 ?>

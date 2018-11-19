@@ -1,21 +1,19 @@
 <?php
-   
+include_once 'corepages/danhsach.php';
+
+$page = new ConstructPage();
+
+$page->getbarname('Danh sách vị trí linh kiện');
+$page->getButton_href('themvitri');
+$page->getButton_name('Thêm vị trí mới');
+$page->getRowName(array('tên vị trí', 'mã vị trí','mô tả'));
+$page->getRowWidth(array(50,10,35));
+
+$page->Issue1();
+?>
 
 ?>
 
-<link rel="stylesheet" type="text/css" href="css/danhsachnv.css" />
-        <h2>Danh sách vị trí linh kiện</h2>
-		<div id="main">
-        	<p id="add-prd"><a href="?page_layout=themvitri"><span>Thêm vị trí mới</span></a></p>
-        	<table id="prds" border="0" cellpadding="0" cellspacing="0" width="100%">
-            	<tr id="prd-bar">
-                	<td width="5%">TT</td>
-                    <td width="50%">Tên vị trí</td>
-                    <td width="10%">Mã vị trí</td>
-                    <td width="35%">Mô tả vị trí</td>
-                    <td width="5%">Sửa</td>
-                    <td width="5%">Xóa</td>
-                </tr>
 
                 <tr>
                 	<td><span>01</span></td>
@@ -26,7 +24,7 @@
                     <td><a href="#"><span>Xóa</span></a></td>
                 </tr>
 
+<?php
+$page->Issue2();
+?>
 
-            </table>
-            <p id="pagination"><span>1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a></p>
-    	</div>

@@ -1,18 +1,16 @@
+<?php
+include_once 'corepages/danhsach.php';
 
-<link rel="stylesheet" type="text/css" href="css/danhsachnhomsp.css" />
+$page = new ConstructPage();
 
-        <h2>Danh sách nhóm sản phẩm</h2>
-		<div id="main">
-        	<p id="add-prd"><a href="?page_layout=themnhomsp"><span>Thêm nhóm sản phẩm mới</span></a></p>
-        	<table id="prds" border="0" cellpadding="0" cellspacing="0" width="100%">
-            	<tr id="prd-bar">
-                	<td width="5%">TT</td>
-                    <td width="20%">Tên nhóm sản phẩm</td>
-                    <td width="10%">Mã nhóm SP</td>
-                    <td width="60%">Mô tả</td>
-                    <td width="5%">Sửa</td>
-                    <td width="5%">Xóa</td>
-                </tr>
+$page->getbarname('Danh sách người sửa lỗi');
+$page->getButton_href('themnhomsp');
+$page->getButton_name('Them mới nhóm sản phẩm');
+$page->getRowName(array('tên nhóm sản phẩm', 'mã nhóm','mô tả'));
+$page->getRowWidth(array(20,10,60));
+
+$page->Issue1();
+?>
 
                 <tr>
                 	<td><span>01</span></td>
@@ -52,7 +50,6 @@
                 </tr>
         -->
 
-
-            </table>
-            <p id="pagination"><span>1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a></p>
-    	</div>
+<?php
+$page->Issue2();
+?>

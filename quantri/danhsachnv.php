@@ -2,25 +2,19 @@
 	ob_start();
 	$sqli = "SELECT * FROM nguoidung WHERE TT>1 ORDER BY MaNguoiDung ASC";
 	$querry = mysqli_query($con, $sqli);
+	
+	include_once 'corepages/danhsach.php';
+	
+	$page = new ConstructPage();
+
+	$page->getbarname('Danh sách người sửa lỗi');
+	$page->getButton_href('themnv');
+	$page->getButton_name('Them mới người sửa');
+	$page->getRowName(array('Mã người dùng','tên người dùng','username','password','Mã PQ','phân quyền'));
+	$page->getRowWidth(array(15,30,10,10,10,20));
+
+	$page->Issue1();
 ?>
-
-<link rel="stylesheet" type="text/css" href="css/danhsachnv.css" />
-
-        <h2>Quản lý người dùng</h2>
-		<div id="main">
-        	<p id="add-prd"><a href="?page_layout=themnv"><span>Tạo người dùng mới</span></a></p>
-        	<table id="prds" border="0" cellpadding="0" cellspacing="0" width="100%">
-            	<tr id="prd-bar">
-                	<td width="5%">TT</td>
-                	<td width="15%">Mã người dùng</td>
-                    <td width="30%">Tên người dùng</td>
-                    <td width="10%">username</td>
-                    <td width="10%">password</td>
-                    <td width="10%">Mã PQ</td>
-                    <td width="20%">Phân Quyền</td>
-                    <td width="5%">Sửa</td>
-                    <td width="5%">Xóa</td>
-                </tr>
                 
                 <tr>
                 	<td><span> 1 </span></td>
@@ -50,9 +44,8 @@
                 </tr>
 	<?php
 	}
+		
+	$page->Issue2();
 	?>
 
-                
-            </table>
-            <p id="pagination"><span>1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a></p>
-    	</div>
+
