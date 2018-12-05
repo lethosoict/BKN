@@ -12,9 +12,6 @@ $page->getRowWidth(array(50,10,35));
 $page->Issue1();
 ?>
 
-?>
-
-
                 <tr>
                 	<td><span>01</span></td>
                     <td class="l5"><a href="#">Vị trí 1</a></td>

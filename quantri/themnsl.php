@@ -1,5 +1,8 @@
 <?php
 	include_once 'phpclass/error.php';
+	
+	$sqli_nsl = "SELECT * FROM nguoisualoi";
+	$querry_nsl = mysqli_query($con, $sqli_nsl);
 			
 	if(isset($_POST['submit'])){
 		$submit_ten_nsl = new GetSubmit($_POST['ten_nsl'], '');
@@ -8,7 +11,8 @@
 		$submit_tay_nghe = new GetSubmit($_POST['tay_nghe'], 'unselect');
 		$submit_don_vi = new GetSubmit($_POST['don_vi'], 'unselect');
 		$submit_ghi_chu = new GetSubmit($_POST['ghi_chu'], '');
-							
+		$submit_trang_thai = new GetSubmit($_POST['trang_thai'], '');
+						
 		if(
 			isset($submit_ten_nsl->submit) &&
 			isset($submit_ma_nsl->submit) &&
@@ -16,6 +20,7 @@
 			isset($submit_tay_nghe->submit) &&
 			isset($submit_don_vi->submit) &&
 			isset($submit_ghi_chu->submit)
+			&& isset($submit_trang_thai->submit)
 		){
 			/*
 			echo "Availble all information...!!!";
@@ -28,7 +33,17 @@
 			fwrite($myFile, $txt);
 			fclose($myFile);
 			* 
+			* 
 			* */
+			
+			echo $submit_ten_nsl->submit;
+			
+			$sqli_insert_nsl = "INSERT INTO  nguoisualoi (MaNguoiSuaLoi, TenNguoiSuaLoi, HocVan, BacTayNghe, DonVi, GhiChu)
+									VALUES('$submit_ma_nsl->submit', '$submit_ten_nsl->submit', '$submit_hoc_van->submit', '$submit_tay_nghe->submit', '$submit_don_vi->submit', 
+									'$submit_ghi_chu->submit')";
+									
+			$querry_insert_nsl = mysqli_query($con, $sqli_insert_nsl);
+			header('location: quantri.php?page_layout=danhsachnsl');
 		
 		}
 	}
@@ -103,7 +118,7 @@
                     </tr>
                     
                     <tr>
-                       <td><label>Trạng Thái</label><br />Hoạt động <input type="radio" name="active" value= 1 /> Không Hoạt động <input type="radio" name="active" value=0 /></td>
+                       <td><label>Trạng Thái</label><br />Hoạt động <input type="radio" name="trang_thai" value= 1 /> Không Hoạt động <input type="radio" name="trang_thai" value=0 /></td>
                     </tr>
 
                     <!--

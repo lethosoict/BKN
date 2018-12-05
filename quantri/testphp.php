@@ -37,15 +37,15 @@
 	require_once 'classes/PHPExcel/IOFactory.php';
 	
 	// Load existing file excel and get values from cells 
-	/*
+	
 	if(isset($_FILES['excelFile']) && !empty($_FILES['excelFile']['tmp_name'])){
 			//var_dump($_FILES['excelFile']['tmp_name']);
 			$excelObject = PHPExcel_IOFactory::load($_FILES['excelFile']['tmp_name']);
-													 $getSheet = $excelObject->getActiveSheet()->toArray(null);
+			//$getSheet = $excelObject->getActiveSheet()->toArray(null);
 					
-					echo '<pre>';
-					echo json_encode($getSheet);
-					echo var_dump($getSheet);  
+					//echo '<pre>';
+					//echo json_encode($getSheet);
+					//echo var_dump($getSheet);  
 					
 			$workSheet = $excelObject->getSheet(0);
 			$lastRow = $workSheet->getHighestRow();
@@ -61,7 +61,7 @@
 						}
 			echo "</table>";
 	 }
-	 */
+	 
 	
 	// Write value into excel file. Create newfile!! cant not override on existing file
 	/*
@@ -94,17 +94,17 @@
 <link rel="stylesheet" type="text/css" href="css/dangnhap.css" />
 </head>
 <body>
-	<!--
+	
 	<form action="" method="post" enctype="multipart/form-data">
 			<input type="file" name="excelFile" />
 			<input type="submit" name="" value="submit" />
 			<button type="button" onclick="alert('Hello world!')"> Warning</button>
 		</form>
-	-->
 	
-	<form method="post" enctype="multipart/form-data">
+	
+	<!-- <form method="post" enctype="multipart/form-data">
 		<input type="submit" name="submit" value="cap nhat" />
-	</form>
+	</form> -->
 	
 </body>
 </html>

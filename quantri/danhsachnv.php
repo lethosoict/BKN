@@ -9,7 +9,7 @@
 
 	$page->getbarname('Danh sách người sửa lỗi');
 	$page->getButton_href('themnv');
-	$page->getButton_name('Them mới người sửa');
+	$page->getButton_name('Thêm mới người sửa');
 	$page->getRowName(array('Mã người dùng','tên người dùng','username','password','Mã PQ','phân quyền'));
 	$page->getRowWidth(array(15,30,10,10,10,20));
 
