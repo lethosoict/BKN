@@ -1,16 +1,24 @@
 <?php
 include_once 'phpclass/error.php';
 
+// $sqli_nsp = "SELECT * FROM nhomsanpham";
+// $querry_nsp = mysqli_query($con, $sqli_nsp);
+
 if(isset($_POST['submit'])){
 	$submit_ten_nsp = new GetSubmit($_POST['ten_nsp'], '');
 	$submit_ma_nsp = new GetSubmit($_POST['ma_nsp'], '');
 	$submit_mota_nsp = new GetSubmit($_POST['mota_nsp'], '');
 	
-	if(isset($submit_ten_nsp->error) &&
-	   isset($submit_ma_nsp->error) &&
-	   isset($submit_mota_nsp->error)
+	if(isset($submit_ten_nsp->submit) &&
+	   isset($submit_ma_nsp->submit) &&
+	   isset($submit_mota_nsp->submit)
 	){
 		// Insert into Database
+		echo $submit_mota_nsp->submit;
+		$sqli_insert_nsp = "INSERT INTO nhomsanpham (MaNhomSP, TenNhomSP, MoTa) VALUES 
+										('$submit_ma_nsp->submit', '$submit_ten_nsp->submit', '$submit_mota_nsp->submit')";
+		$querry_insert_nsp = mysqli_query($con, $sqli_insert_nsp);
+		header('location: quantri.php?page_layout=danhsachnhomsp');
 	}
 }
 

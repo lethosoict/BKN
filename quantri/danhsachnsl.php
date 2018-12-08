@@ -10,7 +10,7 @@ $page = new ConstructPage();
 
 $page->getbarname('Danh sách người sửa lỗi');
 $page->getButton_href('themnsl');
-$page->getButton_name('Them mới người sửa');
+$page->getButton_name('Thêm mới người sửa');
 $page->getRowName(array('Mã người sửa','tên người sửa','học vấn','bậc tay nghề','đơn vị','ghi chú','Trang Thai'));
 $page->getRowWidth(array(15,20,10,10,10,22,8));
 
@@ -44,7 +44,7 @@ $page->Issue1();
                     <td><span class="thumb"><?php echo $row['DonVi'] ?></span></td>
                     <td><span class="price"> <?php echo $row['GhiChu'] ?> </span></td>
                     <td><span class="price"> <?php echo $row['TrangThai'] ?> </span></td>
-                    <td><a href="#"><span>Sửa</span></a></td>
+                    <td><a href="?page_layout=suansl&idnsl=<?php echo $row['TT']?>"><span>Sửa</span></a></td>
                     <td><a><span>Xóa</span></a></td>
                 </tr>
      <?php

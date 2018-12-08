@@ -1,8 +1,8 @@
 <?php
 	include_once 'phpclass/error.php';
 	
-	$sqli_nsl = "SELECT * FROM nguoisualoi";
-	$querry_nsl = mysqli_query($con, $sqli_nsl);
+	// $sqli_nsl = "SELECT * FROM nguoisualoi";
+	// $querry_nsl = mysqli_query($con, $sqli_nsl);
 			
 	if(isset($_POST['submit'])){
 		$submit_ten_nsl = new GetSubmit($_POST['ten_nsl'], '');
@@ -35,12 +35,10 @@
 			* 
 			* 
 			* */
-			
-			echo $submit_ten_nsl->submit;
-			
-			$sqli_insert_nsl = "INSERT INTO  nguoisualoi (MaNguoiSuaLoi, TenNguoiSuaLoi, HocVan, BacTayNghe, DonVi, GhiChu)
-									VALUES('$submit_ma_nsl->submit', '$submit_ten_nsl->submit', '$submit_hoc_van->submit', '$submit_tay_nghe->submit', '$submit_don_vi->submit', 
-									'$submit_ghi_chu->submit')";
+							
+			$sqli_insert_nsl = "INSERT INTO  nguoisualoi (MaNguoiSuaLoi, TenNguoiSuaLoi, HocVan, BacTayNghe, DonVi, GhiChu, TrangThai)
+									VALUES ('$submit_ma_nsl->submit', '$submit_ten_nsl->submit', '$submit_hoc_van->submit', '$submit_tay_nghe->submit', '$submit_don_vi->submit', 
+									'$submit_ghi_chu->submit', '$submit_trang_thai->submit')";
 									
 			$querry_insert_nsl = mysqli_query($con, $sqli_insert_nsl);
 			header('location: quantri.php?page_layout=danhsachnsl');

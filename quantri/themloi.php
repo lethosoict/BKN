@@ -6,11 +6,15 @@ if(isset($_POST['submit'])){
 	$submit_ma_nl = new GetSubmit($_POST['ma_nl'], '');
 	$submit_mota_nl = new GetSubmit($_POST['mota_nl'], '');
 	
-	if(isset($submit_ten_nl->error) &&
-	   isset($submit_ma_nl->error) &&
-	   isset($submit_mota_nl->error)
+	if(isset($submit_ten_nl->submit) &&
+	   isset($submit_ma_nl->submit) &&
+	   isset($submit_mota_nl->submit)
 	){
 		// Insert into Database
+		$sqli_insert_nl = "INSERT INTO nhomloi (MaNhomLoi, TenNhomLoi, MoTa) 
+										VALUES ('$submit_ma_nl->submit','$submit_ten_nl->submit','$submit_mota_nl->submit')";
+		$querry_insert_nl = mysqli_query($con, $sqli_insert_nl);
+		header('location: quantri.php?page_layout=danhsachnhomloi');
 	}
 }
 
