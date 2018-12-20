@@ -45,7 +45,7 @@
                 <li><a href="?page_layout=danhsachlinhkien">Linh kiện</a></li>
                 <li><a href="?page_layout=danhsachvitri">Vị trí</a></li>
                 <li><a href="?page_layout=hanhdongsua">Hành động sửa</a></li>
-                <li><a href="#">Sản phẩm Nhận</a></li>
+                <li><a href="?page_layout=sanphamnhan">Sản phẩm Nhận</a></li>
                 <li><a href="#">Sản phẩm Sửa</a></li>
                 <!-- <li><a href="?page_layout=danhsachloi">TestDS</a></li> -->
                 <!--<li><a target="_blank" href="#">Thêm mới</a></li>-->

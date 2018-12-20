@@ -6,11 +6,15 @@ if(isset($_POST['submit'])){
 	$submit_ma_vt = new GetSubmit($_POST['ma_vt'], '');
 	$submit_mota_vt = new GetSubmit($_POST['mota_vt'], '');
 	
-	if(isset($submit_ten_vt->error) &&
-	   isset($submit_ma_vt->error) &&
-	   isset($submit_mota_vt->error)
+	if(isset($submit_ten_vt->submit) &&
+	   isset($submit_ma_vt->submit) &&
+	   isset($submit_mota_vt->submit)
 	){
 		// Insert into Database
+		$sqli_insert_vitri = "INSERT INTO vitrilinhkien (MaViTri, TenViTri, moTa)
+									VALUES ('$submit_ma_vt->submit','$submit_ten_vt->submit','$submit_mota_vt->submit')";
+		$querry_insert_vitri = mysqli_query($con, $sqli_insert_vitri);
+		header('location: quantri.php?page_layout=danhsachvitri');
 	}
 }
 

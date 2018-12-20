@@ -26,7 +26,7 @@
 			isset($submit_tay_nghe->submit) &&
 			isset($submit_don_vi->submit) &&
 			isset($submit_ghi_chu->submit) &&
-			isset($submit_trang_thai)
+			isset($submit_trang_thai->submit)
 		){
 			//echo "Availble all information...!!!";
 			$sqli_update_nsl = "UPDATE nguoisualoi SET 

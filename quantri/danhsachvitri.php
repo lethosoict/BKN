@@ -1,5 +1,9 @@
 <?php
 include_once 'corepages/danhsach.php';
+ob_start();
+$sqli = "SELECT * FROM vitrilinhkien ORDER BY TT ASC";
+$querry = mysqli_query($con, $sqli);
+
 
 $page = new ConstructPage();
 
@@ -11,15 +15,21 @@ $page->getRowWidth(array(50,10,35));
 
 $page->Issue1();
 ?>
-
+<?php
+while($row = mysqli_fetch_array($querry)){
+?>
                 <tr>
-                	<td><span>01</span></td>
-                    <td class="l5"><a href="#">Vị trí 1</a></td>
-                    <td class="l5"><span class="price"> VT01</span></td>
-                    <td><span class="thumb">Mô tả cho vị trí</span></td>
-                    <td><a href="?page_layout=suavitri"><span>Sửa</span></a></td>
-                    <td><a href="#"><span>Xóa</span></a></td>
+                	<td><span><?php echo $row['TT'] ?></span></td>
+                    <td class="l5"><a href="#"><?php echo $row['TenViTri'] ?></a></td>
+                    <td class="l5"><span class="price"> <?php echo $row['MaViTri'] ?> </span></td>
+                    <td><span class="thumb"><?php echo $row['moTa'] ?></span></td>
+                    <td><a href="?page_layout=suavitri&idvt=<?php echo $row['TT']?>"><span>Sửa</span></a></td>
+                    <td><a><span>Xóa</span></a></td>
                 </tr>
+                
+<?php
+}
+?>
 
 <?php
 $page->Issue2();

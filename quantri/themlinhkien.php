@@ -6,11 +6,17 @@ if(isset($_POST['submit'])){
 	$submit_ma_lk = new GetSubmit($_POST['ma_lk'], '');
 	$submit_mota_lk = new GetSubmit($_POST['mota_lk'], '');
 	
-	if(isset($submit_ten_lk->error) &&
-	   isset($submit_ma_lk->error) &&
-	   isset($submit_mota_lk->error)
+	if(isset($submit_ten_lk->submit) &&
+	   isset($submit_ma_lk->submit) &&
+	   isset($submit_mota_lk->submit)
 	){
 		// Insert into Database
+		$sqli_insert_lk = "INSERT INTO linhkien (MaLK, TenLK, MoTa) 
+								VALUES ('$submit_ma_lk->submit',
+										'$submit_ten_lk->submit',
+										'$submit_mota_lk->submit')";
+		$querry_insert_lk = mysqli_query($con, $sqli_insert_lk);
+		header('location: quantri.php?page_layout=danhsachlinhkien');
 	}
 }
 

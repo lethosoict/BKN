@@ -6,11 +6,16 @@ if(isset($_POST['submit'])){
 	$submit_ma_hd = new GetSubmit($_POST['ma_hd'], '');
 	$submit_mota_hd = new GetSubmit($_POST['mota_hd'], '');
 	
-	if(isset($submit_ten_hd->error) &&
-	   isset($submit_ma_hd->error) &&
-	   isset($submit_mota_hd->error)
+	if(isset($submit_ten_hd->submit) &&
+	   isset($submit_ma_hd->submit) &&
+	   isset($submit_mota_hd->submit)
 	){
 		// Insert into Database
+		$sqli_insert_hds= "INSERT INTO hanhdongsua (MaHanhDongSua, TenHanhDongSua, MoTa) 
+							VALUES ('$submit_ma_hd->submit','$submit_ten_hd->submit','$submit_mota_hd->submit')";
+							
+		$querry_insert_hds = mysqli_query($con, $sqli_insert_hds);
+		header('location: quantri.php?page_layout=hanhdongsua');
 	}
 }
 
