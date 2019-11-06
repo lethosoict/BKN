@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Database System</title>
+<link rel="stylesheet" type="text/css" href="css/quantri.css" />
+<link rel="stylesheet" type="text/css" href="css/suanv.css" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+    	<div id="navbar">
+        	<ul>
+            	<li id="admin-home"><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Người dùng</a></li>
+                <li><a href="#">Nhóm Sàn phẩm</a></li>
+                <li><a href="#">Sản phẩm Nhận</a></li>
+                <li><a href="#">Sản phẩm Sửa</a></li>
+                <li><a href="#">Linh kiện</a></li>
+                <!--<li><a target="_blank" href="#">xem website</a></li>-->
+            </ul>
+            <div id="user-info">
+            	<p>Xin chào <span>admin</span> Đăng nhập hệ thống</p>
+                <p><a href="#"> Đăng xuất </a></p>
+            </div>
+        </div>
+        <div id="banner">
+        	<div id="logo"><a href="#"><img src="anh/logo.png" height="120px" /></a></div>
+        </div>
+    </div>
+    <div id="body">
+        <h2>Thay đổi thông tin người dùng</h2>
+		<div id="main">
+        	<form method="post" enctype="multipart/form-data">
+        	<table id="add-prd" border="0" cellpadding="0" cellspacing="0">
+            	<tr>
+                	<td><label>Tên người dùng</label><br /><input type="text" name="ten_sp" value="Nguyễn Văn A" /></td>
+                </tr>
+
+
+                <!-- Not require at this time
+                <tr>
+                	<td><label>Job Title</label><br /><input type="file" name="anh_sp" /></td>
+                </tr>
+                -->
+
+
+                <tr>
+                	<td><label>Chức danh</label><br />
+                    	<select name="id_dm">
+                            <option value=1>Technical</option>
+                            <option value=1>Operator SMT</option>
+                            <option value=1>Operator ASM</option>
+                            <option value=1>Quality Engineer</option>
+                            <option value=1>Process Engineer</option>
+                            <option value=1>Manager</option>
+                        </select>	
+                    </td>
+                </tr>
+                <tr>
+                	<td><label>Tên</label><br /><input type="text" name="name" value="Nguyen Van A" /></td>
+                </tr>
+                <tr>
+                	<td><label>Phân quyền</label><br /><input type="text" name="age" value="2"/> </td>
+                </tr>
+                <tr>
+                	<td><label>Bậc tay nghề</label><br /><input type="text" name="lvA" value="3A" /></td>
+                </tr>
+
+                <tr>
+                	<td><label>Gender</label><br />Male <input type="radio" name="gender" value=1 /> Female <input type="radio" name="gender" value=0 /></td>
+                </tr>
+                <tr>
+                	<td><label>Mô tả tóm tắt</label><br /><textarea cols="60" rows="12" name="chi_tiet_sp">Nhân viên nhà máy</textarea></td>
+                </tr>
+                <tr>
+                	<td><input type="submit" name="submit" value="Cập nhật" /> <input type="reset" name="reset" value="làm mới" /></td>
+                </tr>
+            </table>
+            </form>
+    	</div>
+    </div>
+    <div id="footer">
+    	<div id="footer-info">
+            <!-- <h4></h4> -->
+            <p><span> </span> Tầng 2, Nhà 5 tầng, 124 Hoàng Quốc Việt - Cầu Giấy - Hà Nội | <span>Phone:</span> 0914703890</p>
+            <!--<p>Bản quyền thuộc ...</p>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>

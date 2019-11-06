@@ -11,31 +11,31 @@ body{
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
 	color:#666;
-	background:url(../anh/bg.gif) top left repeat;
+	background:url(..) top left repeat;
 	}
 
 /*---------------- Wrapper -------------------*/	
 #wrapper{
-	width:1000px;
+	width:1200px;
 	height:auto;
 	margin:30px auto;
 	}	
 	
 /*---------------- Navbar -------------------*/	
 #header{
-	width:1000px;
+	width:1200px;
 	height:auto;
 	background:#FFF;
 	}
 
 #navbar{
 	position:relative;
-	width:1000px;
+	width:1200px;
 	height:auto;
 	}	
 	
 #navbar ul{
-	width:1000px;
+	width:1200px;
 	height:30px;
 	line-height:30px;
 	border-top:3px solid #840000;
@@ -79,16 +79,17 @@ body{
 	}	
 	
 #user-info{
-	position:absolute;
-	width:213px;
-	height:117px;
-	background:url(../anh/user-info.png) top left no-repeat;
-	top:0px;
-	left:767px;
+	position: absolute;
+	width: 213px;
+	height: 117px;
+	background: url(../anh/user-info.png) top left no-repeat;	
+	top: 40px;
+	left: 970px;
+	
 	}	
 	
 #user-info p{
-	width:193px;
+	width:195px;
 	height:auto;
 	padding:10px;
 	font-family:Verdana, Geneva, sans-serif;
@@ -111,7 +112,7 @@ body{
 	
 /*---------------- Banner -------------------*/	
 #banner{
-	width:960px;
+	width:1160px;
 	height:auto;
 	padding:20px;
 	border-bottom:1px solid #CCC;
@@ -119,14 +120,14 @@ body{
 
 /*---------------- Body -------------------*/		
 #body{
-	width:960px;
+	width:1160px;
 	height:auto;
 	padding:20px;
 	background:#FFF;
 	}
 	
 #body h2{
-	width:940px;
+	width:1140px;
 	height:35px;
 	line-height:35px;
 	font-family:Verdana, Geneva, sans-serif;
@@ -139,7 +140,7 @@ body{
 	}		
 
 #main{
-	width:938px;
+	width:1140px;
 	height:auto;
 	border:1px solid #CCC;
 	padding:20px 10px;
@@ -148,14 +149,14 @@ body{
 
 /*------------------ Footer-----------------*/
 #footer{
-	width:1000px;
+	width:1200px;
 	height:auto;
 	border-top:8px solid #C40000;
 	margin-top:35px;
 	}
 	
 #footer #footer-info{
-	width:1000px;
+	width:1200px;
 	height:auto;
 	background:#000;
 	border-top:20px solid #3F3F3F;
@@ -164,7 +165,7 @@ body{
 	}
 	
 #footer #footer-info h4{
-	width:1000px;
+	width:1200px;
 	height:auto;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:15px;
@@ -174,7 +175,7 @@ body{
 	}		
 
 #footer #footer-info p{
-	width:1000px;
+	width:1200px;
 	height:auto;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
